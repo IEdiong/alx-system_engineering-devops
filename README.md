@@ -1,2 +1,2 @@
 # Shell Basics
-This repo contains some of basics of system devops
+This repo contains some basics of system devops
