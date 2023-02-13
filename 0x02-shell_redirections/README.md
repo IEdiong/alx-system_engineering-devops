@@ -3,7 +3,7 @@
 ## 0. Hello World
 A bash script that prints "Hello, World", followed by a new line to the standard output.
 ```
-echo "Hello, World\n"
+echo "Hello, World"
 ```
 
 Actual solution in [0-hello_world](./0-hello_world)
