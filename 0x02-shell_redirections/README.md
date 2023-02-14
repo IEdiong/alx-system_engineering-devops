@@ -36,6 +36,17 @@ A bash script that displays the content of two files, `/etc/passwd` and `/etc/ho
 #!/bin/bash
 cat /etc/passwd /etc/hosts
 ```
-> The cat command can take in multiple files as arguments 
+> The cat command can take in multiple files as arguments.
 
 Actual solution in [3-twofiles](./3-twofiles)
+
+## 4. Last lines of a file 
+A bash script that displays the last 10 lines of `/etc/passwd`.
+```
+#!/bin/bash
+cat /etc/passwd | tail
+```
+> The standard output of one command can be fed into the standard input of another command using the `"|"`. In the solution above, the output of the `cat /etc/passwd` command is fed into the `tail`.
+> The `tail` command by default prints to standard output the last `10` lines of the input passed into it. 
+
+Actual solution in [4-lastlines](./4-lastlines)
