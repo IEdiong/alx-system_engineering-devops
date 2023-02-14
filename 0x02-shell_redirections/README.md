@@ -60,3 +60,32 @@ cat /etc/passwd | head
 > The `head` command by default prints to standard output the first `10` lines of the input passed into it. 
 
 Actual solution in [5-firstlines](./5-firstlines)
+
+## 6. Line #2 
+A bash script that displays the third line of the file `iacta`, which is in the working directory.
+```
+#!/bin/bash
+cat iacta | head -n 3 | tail -n +3
+```
+OR
+```
+#!/bin/bash
+cat iacta | head -n 3 | tail -n 1
+```
+OR
+```
+#!/bin/bash
+head -n 3 iacta | tail -n +3
+```
+OR
+```
+#!/bin/bash
+head -n 3 iacta | tail -n 1
+```
+> When the `-n NUM` option is passed to the `head` command it prints to standard output the first `NUM` lines instead of the first `10`. If `NUM` has a leading `'-'`, it will print all but the last `NUM` lines of each file.
+
+> When the `-n NUM` option is passsed to the `tail` command it prints to standard output the last `NUM` lines instead of the last `10`. If `NUM` has a leading `'+'` as in `tail -n +3`, it will output starting from the line `NUM`.
+
+> If you choose to omit the `-n` flag, then the `NUM` must have a leading `-` as in `tail -2` and `head -3`. 
+
+Actual solution in [6-third_line](./6-third_line)
