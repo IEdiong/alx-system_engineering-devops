@@ -95,9 +95,11 @@ Actual solution in [6-third_line](./6-third_line)
 A bash script that creates a file named exactly `\*\\'"Best School"\'\\*$\?\*\*\*\*\*:)` containing the text `Best School` ending by a new line..
 ```
 #!/bin/bash
-echo "Best School" > \*\\'"Best School"\'\\*$\?\*\*\*\*\*:) 
+echo "Best School" > \\\*\\\\"'\"Best School\"\\'"\\\\\*\$\\\?\\\*\\\*\\\*\\\*\\\*\:\) 
 ```
 > We can redirect the output of the `echo` command from standard output to the file named above using the `>` operator.
+
+> We also use `\` to escape special characters.
 
 Actual solution in [7-file](./7-file)
 
