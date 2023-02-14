@@ -90,3 +90,14 @@ head -n 3 iacta | tail -n 1
 > If you choose to omit the `-n` flag, then the `NUM` must have a leading `-` as in `tail -2` and `head -3`. The `tail -n +3` command would now be `tail +3`. 
 
 Actual solution in [6-third_line](./6-third_line)
+
+## 7. It is a good file that cuts iron without making a noise 
+A bash script that creates a file named exactly `\*\\'"Best School"\'\\*$\?\*\*\*\*\*:)` containing the text `Best School` ending by a new line..
+```
+#!/bin/bash
+echo "Best School" > \*\\'"Best School"\'\\*$\?\*\*\*\*\*:) 
+```
+> We can redirect the output of the `echo` command from standard output to the file named above using the `>` operator.
+
+Actual solution in [7-file](./7-file)
+
