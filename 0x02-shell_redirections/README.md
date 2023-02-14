@@ -47,6 +47,7 @@ A bash script that displays the last 10 lines of `/etc/passwd`.
 cat /etc/passwd | tail
 ```
 > The standard output of one command can be fed into the standard input of another command using the `"|"`. In the solution above, the output of the `cat /etc/passwd` command is fed into the `tail`.
+
 > The `tail` command by default prints to standard output the last `10` lines of the input passed into it. 
 
 Actual solution in [4-lastlines](./4-lastlines)
@@ -86,6 +87,6 @@ head -n 3 iacta | tail -n 1
 
 > When the `-n NUM` option is passsed to the `tail` command it prints to standard output the last `NUM` lines instead of the last `10`. If `NUM` has a leading `'+'` as in `tail -n +3`, it will output starting from the line `NUM`.
 
-> If you choose to omit the `-n` flag, then the `NUM` must have a leading `-` as in `tail -2` and `head -3`. 
+> If you choose to omit the `-n` flag, then the `NUM` must have a leading `-` as in `tail -2` and `head -3`. The `tail -n +3` command would now be `tail +3`. 
 
 Actual solution in [6-third_line](./6-third_line)
