@@ -29,3 +29,13 @@ cat /etc/passwd
 > The cat command is used to print to standard output the content of the file passed to it. 
 
 Actual solution in [2-hellofile](./2-hellofile)
+
+## 3. What about 2? 
+A bash script that displays the content of two files, `/etc/passwd` and `/etc/hosts`.
+```
+#!/bin/bash
+cat /etc/passwd /etc/hosts
+```
+> The cat command can take in multiple files as arguments 
+
+Actual solution in [3-twofiles](./3-twofiles)
