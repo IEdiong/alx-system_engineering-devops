@@ -1,6 +1,6 @@
 # 0x03. Shell, init files, variables and expansions
 
-## 0. <o>
+## 0. \<o>
 
 A bash script that creates an alias with the name `ls` and a value of `rm *`.
 ```
