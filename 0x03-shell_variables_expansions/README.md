@@ -14,3 +14,15 @@ alias ls="rm *"
 > alias [-p] [name="value"]
 
 Actual solution in [0-alias](./0-alias)
+
+
+## 1. Hello you
+
+A bash script that prints `hello user`, where `user` is the current Linux user. 
+```
+#!/bin/bash
+echo "hello $USER"
+```
+> The global variable `USER` contains the name of the current Linux user.
+
+Actual solution in [1-hello_you](./1-hello_you)
