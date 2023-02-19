@@ -150,3 +150,19 @@ find [where to start searching from] [expressions determines what to find] [-opt
 
 Actual solution in [10-no_more_js](./10-no_more_js)
 
+## 11. Don't just count your directories, make your directories count
+A bash script that deletes all the regular files with a `.js` extension that are present in the current directory and all its subfolders.
+
+```
+#!/bin/bash
+find . -mindepth 1 -maxdepth 1 -type d | wc -l
+```
+
+> The `wc` command means `word count`. The `wc -l` command thus performs a line count on it's input.
+
+> The `-mindepth` and `maxdepth` options have to come before the `-type` option because they are global options.
+
+> You can read up more about [how this command works](https://www.baeldung.com/linux/count-directories#1-using-pure-bash)
+
+Actual solution in [11-directories](./11-directories)
+
