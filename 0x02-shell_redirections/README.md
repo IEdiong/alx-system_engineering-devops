@@ -132,3 +132,21 @@ tail -n 1 iacta >> iacta
 
 Actual solution in [9-duplicate_last_line](./9-duplicate_last_line)
 
+## 10. No more javascript 
+A bash script that deletes all the regular files with a `.js` extension that are present in the current directory and all its subfolders.
+
+```
+#!/bin/bash
+find . -type f -name "*.js" -delete
+```
+
+> The `find` command is used in the syntax
+
+```
+find [where to start searching from] [expressions determines what to find] [-options] [what to find]
+```
+
+> You can read up more about how to use the `find` command [here](https://www.geeksforgeeks.org/find-command-in-linux-with-examples/) and [there](https://linuxize.com/post/how-to-find-files-in-linux-using-the-command-line/).
+
+Actual solution in [10-no_more_js](./10-no_more_js)
+
