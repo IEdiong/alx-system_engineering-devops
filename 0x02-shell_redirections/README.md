@@ -92,7 +92,8 @@ head -n 3 iacta | tail -n 1
 Actual solution in [6-third_line](./6-third_line)
 
 ## 7. It is a good file that cuts iron without making a noise 
-A bash script that creates a file named exactly `\*\\'"Best School"\'\\*$\?\*\*\*\*\*:)` containing the text `Best School` ending by a new line..
+A bash script that creates a file named exactly `\*\\'"Best School"\'\\*$\?\*\*\*\*\*:)` containing the text `Best School` ending by a new line.
+
 ```
 #!/bin/bash
 echo "Best School" > \\\*\\\\"'\"Best School\"\\'"\\\\\*\$\\\?\\\*\\\*\\\*\\\*\\\*\:\) 
@@ -102,4 +103,18 @@ echo "Best School" > \\\*\\\\"'\"Best School\"\\'"\\\\\*\$\\\?\\\*\\\*\\\*\\\*\\
 > We also use `\` to escape special characters.
 
 Actual solution in [7-file](./7-file)
+
+## 8. Save current state of directory 
+A bash script that writes into the file `ls_cwd_content` the result of the command `ls -la`. It creates the file, `ls_cwd_content`, if it doesn't exists but if it does exist it should be overwritten.
+
+```
+#!/bin/bash
+ls -la > ls_cwd_content
+```
+
+> We can use the `>` operator to redirect the output to the file `ls_cwd_content`.
+
+> The `>` operator overrides the content of the file if the file already exists else it would create the file anew.
+
+Actual solution in [8-cwd_state](./8-cwd_state)
 

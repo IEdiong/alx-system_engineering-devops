@@ -26,3 +26,13 @@ echo "hello $USER"
 > The global variable `USER` contains the name of the current Linux user.
 
 Actual solution in [1-hello_you](./1-hello_you)
+
+## 2. The path to success is to take massive, determined action 
+A bash script that adds `/action` to the `PATH`. `/action` should be the last directory the shell looks into when looking for a program. 
+```
+#!/bin/bash
+echo "hello $USER"
+```
+> The global variable `USER` contains the name of the current Linux user.
+
+Actual solution in [2-path](./2-path)
