@@ -166,3 +166,16 @@ find . -mindepth 1 -maxdepth 1 -type d | wc -l
 
 Actual solution in [11-directories](./11-directories)
 
+## 12. What's new 
+A bash script that displays the 10 newest files in the current directory. It prints to the standard output one file per line sorted from the newest to the oldest. 
+
+```
+#!/bin/bash
+ls -t | head
+```
+
+> The `ls -t` command list out all the files in the current directory sorted from the newest to the oldest. The `head` command outputs the first 10 lines of the input by default. 
+
+
+Actual solution in [12-newest_files](./12-newest_files)
+
