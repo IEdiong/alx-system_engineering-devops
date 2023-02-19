@@ -118,3 +118,17 @@ ls -la > ls_cwd_content
 
 Actual solution in [8-cwd_state](./8-cwd_state)
 
+## 9. Duplicate last line 
+A bash script that duplicates the last line of the file `iacta`, which will be in the working directory.
+
+```
+#!/bin/bash
+tail -n 1 iacta >> iacta
+```
+
+> The `tail` command can be used to output the last `n` lines then,
+
+> We can use the `>>` operator to append the output to the end of the file `iacta`.
+
+Actual solution in [9-duplicate_last_line](./9-duplicate_last_line)
+
