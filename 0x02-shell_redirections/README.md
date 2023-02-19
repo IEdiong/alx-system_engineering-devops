@@ -179,3 +179,16 @@ ls -t | head
 
 Actual solution in [12-newest_files](./12-newest_files)
 
+## 13. Being unique is better than being perfect
+A bash script that takes a list of words as input and prints only words that appear exactly once. The words are sorted.
+
+```
+#!/bin/bash
+sort | uniq -u
+```
+
+> You can read up more about [how the `uniq` command works](https://www.geeksforgeeks.org/uniq-command-in-linux-with-examples/)
+
+
+Actual olution in [13-unique](./13-unique)
+
